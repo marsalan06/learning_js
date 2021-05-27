@@ -1,0 +1,49 @@
+js
+1) create an html file to apply js over 
+2) <script> tags are used to sperate js from any other lanaguage code 
+3) essentially js files are kept seprate but we'll start from same page 
+4) script tags are palced to keep the js code in them, the console.log function is like the print
+function for the terminal but in browsers its called a console and log means write to the console
+5) ; is used in js to indicate a end of line instruction like in c 
+6)document.write is used to display anything on the html page it self, similar as jinja, we can
+place html tags in it 
+7) we can raise warning and errors for the console through console.warn and console.error 
+8) but js code without semicolon works is because it has automatic semicolon insertion feature with
+it, but as a good programmer you should place semicolon your self
+
+How to change html tag values
+1) using document.getElementById method we can get the particual tag if a id is asigned to that tag
+2) and to change the tag contents we can use .innerHTML method to the previous js funtion and place
+a new value to the tag, we can use document.write(document.getElementById()) to directly write to 
+the html
+3)comment in js //, for multiline comment \* */, now we'll use the <input> tag to get user input 
+    in innerHTML and change it by using js, to show the value of the input tag through innerHTML 
+    we need a function because the code is read line by line 
+4) errors in the js code can be seen on the console
+
+
+variables and data types:
+primitive data types: 
+    a) string "this is @ strIng", 'this !$ @ls0 @ Str|nG'
+    b) number 1,2,3,4.6666,3.14,-.22222 all are number , their is no int or float discrimnation
+    c) boolean true / false only , True /False are not boolean
+    d)undefined is a type, when a variable is created but not assigned value its called undefined
+        var demo;
+        alert(demo); //shows undefined
+        alert(typeof demo); //shows undefined 
+    e) null is an object, while null is assigned to be refreneced same as in python, 
+        var demo = null;
+        alert(demo); //shows null
+        alert(typeof demo); //shows object
+    
+variables:
+    --> var key word is used in js as c
+        var x = 6;
+        console.log(x); or document.write(x);
+        x=9; reasigns the x to the value 9 
+    variable names should be meaningfull and shouldnt have spaces , so my_name , cant start with numbers
+    , these can be camel cases, variables arent binded to a data type
+        --> var x= 6; //is an number variable 
+            var name= "Arsalan" //is a string variable
+            x=name; //reasigns x (previous num) to a string variable to store a string 
+    
