@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Functions tutorial
+        </title>
+    </head>
+    <body>
+        <h1 id="l1">
+            we'll demonstrate Functions
+        </h1>
+        <button onclick="Text_chng()" onmouseover="Text_c_back()">click me to change text above</button>
+
+        <input type="text" id="in1"/> <!--input created to get value-->
+        <button onclick="pressed()">This is to read the input field</button>
+
+        <script type="text/javascript">
+            // function add(){
+            //     console.log("this is the add function");
+            // }
+            function add(a,b){
+                return a+b;
+                //console.log(a+b); //this can also happen so no return statement 
+            }
+            var x=add(3,5);
+            console.log(x);
+            console.log(add(45.5,-34.4));
+
+            function Text_chng(){
+                document.getElementById("l1").innerHTML="This line changed on pressing the button";
+            }
+            function Text_c_back(){
+                document.getElementById("l1").innerHTML="The function was demonstrated";
+            }
+
+            function pressed(){
+                var x = document.getElementById("in1").value;
+                if (x=="red"){
+                    console.log(x);
+                    document.getElementById("l1").style.color=x;
+                }
+                else if(x=="blue"){
+                    console.log(x,"else if");
+                    document.getElementById("l1").style.color=x;
+                }
+                else{
+                    console.log(x,"else");
+                    document.getElementById("l1").style.color=x;
+                }
+            }
+
+        </script>
+    </body>
+</html>

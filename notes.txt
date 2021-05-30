@@ -15,7 +15,8 @@ How to change html tag values
 1) using document.getElementById method we can get the particual tag if a id is asigned to that tag
 2) and to change the tag contents we can use .innerHTML method to the previous js funtion and place
 a new value to the tag, we can use document.write(document.getElementById()) to directly write to 
-the html
+the html, getElementById().style.color="red" changes color of the tag content
+
 3)comment in js //, for multiline comment \* */, now we'll use the <input> tag to get user input 
     in innerHTML and change it by using js, to show the value of the input tag through innerHTML 
     we need a function because the code is read line by line 
@@ -47,3 +48,40 @@ variables:
             var name= "Arsalan" //is a string variable
             x=name; //reasigns x (previous num) to a string variable to store a string 
     
+logical and assignment operators 
+we can + -*/ and % (remainder) 2 numbers, a "string" + 1 (num) will result in concatination "string1"
+increament operator is x+=1 and so on, this increament can work on string as well 
+    var x= "hi";
+    x+="hi";
+    console.log(x)
+        => "hihi"
+boolean comparision , var x=10; var y=12; var b= x>=y; //test if x is greater than or equal to y 
+                    console.log(b) // returns false 
+
+equal comparision operator are of two type , one that compares value a variable holds while the other 
+not only comapres the value but the type as well (c1), opposite is != for == and !== for === ,
+logical and && logical or ||, bitwise and & bitwise or |, not is ! 
+https://www.quora.com/What-is-difference-between-and-8 (logical && and bitwise operator &)
+
+functions:
+function (keyword) add (name of function) (*args,**kwargs){
+    function operations happen here  
+    return statement;
+}
+functions can be called as variables var x=add();
+
+
+if else:
+if(){
+    conditon;
+}
+else if (){
+    conditon;
+}
+
+else{
+    conditon;
+}
+getElementById("").value; can be stored in a variable to compare
+multiple if's will waste computation cycle in case of any one true because all if's 
+will be checked while else if will be checked for only one true instance
